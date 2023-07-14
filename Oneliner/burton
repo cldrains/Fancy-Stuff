@@ -1,0 +1,6 @@
+Little endian:
+clang -include stdio.h -include stdlib.h -Wall -Weverything -pedantic -DB=6945503773712347754LL -DI=5859838231191962459LL -DT=0 -DS=7 -o prog prog.c
+Big endian:
+clang -include stdio.h -include stdlib.h -Wall -Weverything -pedantic -DB=7091606191627001958LL -DI=6006468689561538903LL -DT=1 -DS=0 -o prog.be prog.c
+Try
+./prog 1; ./prog.be 1
